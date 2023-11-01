@@ -12,3 +12,8 @@ app.get("/api/dislikedcontent", getDislikedContent);
 app.get("/api/likedcontent", getLikableContent);
 
 app.listen(3029, () => console.log('Server running on 3029'));
+
+app.get('/api/movies', getMovies)
+app.delete('/api/movies/:id', deleteMovie)
+app.post('/api/movies', createMovie)
+app.put('/api/movies/:id', updateMovie)
